@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 function Home() {
-  const [imagePreview, setImagePreview] = useState(null);
-
   useEffect(() => {
     document.body.className = 'home-page';
     return () => {
@@ -25,38 +23,11 @@ function Home() {
             <div className="row align-items-center">
               <div className="col-lg-4 text-center mb-4 mb-lg-0">
                 <div className="profile-image-container">
-                  {imagePreview ? (
-                    <img 
-                      src={imagePreview} 
-                      alt="Linus Bwana" 
-                      className="profile-image"
-                    />
-                  ) : (
-                    <div className="profile-placeholder">
-                      <svg width="80" height="80" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                      </svg>
-                      <p className="mt-2 text-muted small">Add your photo</p>
-                    </div>
-                  )}
-                  <input 
-                    type="file" 
-                    id="profileImage" 
-                    accept="image/*"
-                    onChange={(e) => {
-                      const file = e.target.files[0];
-                      if (file) {
-                        const reader = new FileReader();
-                        reader.onloadend = () => setImagePreview(reader.result);
-                        reader.readAsDataURL(file);
-                      }
-                    }}
-                    style={{ display: 'none' }}
+                  <img 
+                    src={`${import.meta.env.BASE_URL}images/linus.jpg`}
+                    alt="Linus Bwana" 
+                    className="profile-image"
                   />
-                  <label htmlFor="profileImage" className="btn btn-sm btn-outline-primary mt-3">
-                    Upload Photo
-                  </label>
                 </div>
               </div>
 
@@ -77,7 +48,7 @@ function Home() {
                   scalable solutions.
                 </p>
                 <div className="d-flex gap-3 flex-wrap">
-                  <a href="assets/CV.docx" className="btn btn-primary">
+                  <a href={`${import.meta.env.BASE_URL}CV.docx`} className="btn btn-primary" download>
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="me-2">
                       <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                       <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>

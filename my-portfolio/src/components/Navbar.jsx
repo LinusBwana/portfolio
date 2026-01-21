@@ -7,9 +7,14 @@ function Navbar() {
   // Function to close navbar on mobile after clicking a link
   const closeNavbar = () => {
     const navbarCollapse = document.getElementById('navbarNav');
-    const bsCollapse = window.bootstrap?.Collapse?.getInstance(navbarCollapse);
-    if (bsCollapse) {
-      bsCollapse.hide();
+    if (navbarCollapse) {
+      const bsCollapse = window.bootstrap?.Collapse?.getInstance(navbarCollapse);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      } else {
+        // If instance doesn't exist, manually remove the show class
+        navbarCollapse.classList.remove('show');
+      }
     }
   };
 

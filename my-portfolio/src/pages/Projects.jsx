@@ -10,21 +10,21 @@ function Projects() {
 
   const projects = [
     {
-      title: 'Project One',
-      description: 'A full-stack web application built with React and Node.js',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      link: '#'
+      title: 'Blog Website',
+      description: 'A blog built using Django templates with authentication',
+      technologies: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Bootstrap'],
+      link: 'https://django-blog-production-61f9.up.railway.app/'
     },
     {
-      title: 'Project Two',
-      description: 'E-commerce platform with payment integration',
-      technologies: ['React', 'Express', 'PostgreSQL'],
-      link: '#'
+      title: 'Job Search Platform',
+      description: 'A backend job search platform that has role-based access, JWT, rate limiting etc',
+      technologies: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Bootstrap'],
+      link: 'https://job-board-platform.up.railway.app/api/docs/'
     },
     {
-      title: 'Project Three',
-      description: 'Real-time chat application with WebSocket',
-      technologies: ['React', 'Socket.io', 'Redis'],
+      title: 'Fullstack Task Manager',
+      description: 'A task manager built to track my todo list',
+      technologies: ['Python', 'Django', 'DRF', 'React.js', 'PostgreSQL', 'Bootstrap'],
       link: '#'
     }
   ];
@@ -56,7 +56,7 @@ function Projects() {
                         </span>
                       ))}
                     </div>
-                    <a href={project.link} className="btn btn-outline-primary btn-sm">
+                    <a href={project.link} className="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">
                       View Project
                     </a>
                   </div>

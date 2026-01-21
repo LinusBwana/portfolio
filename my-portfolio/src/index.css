@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  transition: background 0.3s ease;
+  background-color: #f8f9fa;
   overflow-x: hidden;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-gradient .nav-link {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   font-weight: 500;
   padding: 0.5rem 1rem !important;
   margin: 0 0.25rem;
@@ -55,7 +55,7 @@ body {
 .navbar-gradient .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
@@ -65,110 +65,26 @@ body {
 }
 
 .navbar-gradient .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.15);
   color: white !important;
 }
 
 .navbar-gradient .nav-link:hover::after {
-  width: 80%;
+  width: 70%;
 }
 
 .navbar-gradient .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   color: white !important;
   font-weight: 600;
+}
+
+.navbar-gradient .nav-link.active::after {
+  width: 70%;
 }
 
 /* Fixed navbar spacing */
 body {
   padding-top: 70px;
-}
-
-/* Animated Background Styles */
-body.home-page {
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #4facfe);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
-}
-
-body.projects-page {
-  background: linear-gradient(-45deg, #fa709a, #fee140, #30cfd0, #330867);
-  background-size: 400% 400%;
-  animation: gradientShift 12s ease infinite;
-}
-
-body.contact-page {
-  background: linear-gradient(-45deg, #a8edea, #fed6e3, #96e6a1, #d4fc79);
-  background-size: 400% 400%;
-  animation: gradientShift 18s ease infinite;
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Floating particles animation */
-body.home-page::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image: 
-    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
-  animation: floatParticles 20s ease-in-out infinite;
-}
-
-body.projects-page::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image: 
-    radial-gradient(circle at 60% 70%, rgba(255, 255, 255, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-  animation: floatParticles 15s ease-in-out infinite reverse;
-}
-
-body.contact-page::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image: 
-    radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 20% 60%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-  animation: floatParticles 25s ease-in-out infinite;
-}
-
-@keyframes floatParticles {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  33% {
-    transform: translate(30px, -30px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
 }
 
 /* Main Content Styles */
@@ -177,16 +93,16 @@ main {
 }
 
 .content-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .content-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 /* Profile Image Styles */
@@ -199,22 +115,8 @@ main {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid white;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-.profile-placeholder {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 3px dashed #dee2e6;
-  color: #6c757d;
-  margin: 0 auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Gradient Text */
@@ -228,10 +130,17 @@ main {
 /* Tech Stack Styles */
 .tech-category {
   padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
-  border-radius: 0.75rem;
-  border: 1px solid rgba(102, 126, 234, 0.1);
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   height: 100%;
+  transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .tech-badge {
@@ -252,16 +161,16 @@ main {
 
 /* Feature Cards (Home Page) */
 .feature-card {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-radius: 0.75rem;
+  background: white;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
@@ -271,14 +180,15 @@ main {
 /* Project Cards */
 .project-card {
   background: white;
-  border-radius: 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   border-color: #667eea;
 }
 
@@ -408,4 +318,11 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Remove body class backgrounds */
+body.home-page,
+body.projects-page,
+body.contact-page {
+  background-color: #f8f9fa;
 }
