@@ -25,7 +25,7 @@ function Projects() {
       title: 'Fullstack Task Manager',
       description: 'A task manager built to track my todo list',
       technologies: ['Python', 'Django', 'DRF', 'React.js', 'PostgreSQL', 'Bootstrap'],
-      link: 'https://job-board-platform.up.railway.app/'
+      link: 'https://fullstack-task-manager-app.vercel.app/'
     }
   ];
 
