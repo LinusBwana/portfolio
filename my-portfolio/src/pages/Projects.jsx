@@ -13,7 +13,7 @@ function Projects() {
       title: 'Blog Website',
       description: 'A blog built using Django templates with authentication',
       technologies: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Bootstrap'],
-      link: 'https://django-blog-production-61f9.up.railway.app/'
+      link: 'https://django-blog-production-d1a6.up.railway.app/'
     },
     {
       title: 'Job Search Platform',
@@ -38,7 +38,7 @@ function Projects() {
               <h1 className="display-4 fw-bold gradient-text mb-3">
                 My Projects
               </h1>
-              <p className="lead text-muted">
+              <p className="lead fw-bold text-light">
                 Explore some of my recent work and creations
               </p>
             </div>
@@ -47,7 +47,7 @@ function Projects() {
               {projects.map((project, index) => (
                 <div key={index} className="col-md-6 col-lg-4">
                   <div className="project-card h-100 p-4">
-                    <h5 className="fw-bold mb-3">{project.title}</h5>
+                    <h5 className="fw-bold mb-3 text-primary">{project.title}</h5>
                     <p className="text-muted mb-3">{project.description}</p>
                     <div className="mb-3">
                       {project.technologies.map((tech, idx) => (

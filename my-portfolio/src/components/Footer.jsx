@@ -46,7 +46,7 @@ function Footer() {
             <h6 className="text-uppercase fw-bold mb-3">Get In Touch</h6>
             <p className="mb-2 text-white-50">
               <strong>Email:</strong><br />
-              <a href="mailto:hello@linusbwana.com" className="footer-link">hello@linusbwana.com</a>
+              <a href="mailto:hello@linusbwana.com" className="footer-link">linusbwana49@gmail.com</a>
             </p>
             <p className="mb-0 text-white-50">
               <strong>Location:</strong><br />

@@ -61,7 +61,7 @@ function Navbar() {
                 className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
                 onClick={closeNavbar}
               >
-                Contact
+                Hire Me
               </Link>
             </li>
           </ul>

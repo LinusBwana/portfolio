@@ -39,7 +39,7 @@ function Contact() {
               <h1 className="display-4 fw-bold gradient-text mb-3">
                 Get In Touch
               </h1>
-              <p className="lead text-muted">
+              <p className="lead fw-bold text-light">
                 Have a question or want to work together? Drop me a message!
               </p>
             </div>
@@ -124,8 +124,8 @@ function Contact() {
                   </div>
                   <div>
                     <h6 className="fw-bold mb-1">Email</h6>
-                    <a href="mailto:hello@linusbwana.com" className="text-muted text-decoration-none">
-                      hello@linusbwana.com
+                    <a href="mailto:hello@linusbwana.com" className="text-light text-decoration-none">
+                      linusbwana49@gmail.com
                     </a>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ function Contact() {
                   </div>
                   <div>
                     <h6 className="fw-bold mb-1">Location</h6>
-                    <p className="text-muted mb-0">Nairobi, Kenya</p>
+                    <p className="text-light mb-0">Nairobi, Kenya</p>
                   </div>
                 </div>
               </div>

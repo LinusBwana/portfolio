@@ -14,7 +14,7 @@ function Home() {
     tools: ['Git & GitHub', 'Docker', 'Postman', 'Swagger']
   };
 
-  const resumeUrl = "https://drive.google.com/file/d/1rk8r3UaVt_mlEUNJFkWLQdkYeCjRwpzl/view?usp=drive_link"
+  const resumeUrl = `${import.meta.env.BASE_URL}Linus-Ogero-Bwana.pdf`
 
   return (
     <div className="container my-5">
@@ -24,11 +24,11 @@ function Home() {
           <div className="content-card p-5">
             <div className="row align-items-center">
               <div className="col-lg-4 text-center mb-4 mb-lg-0">
-                <div className="profile-image-container">
+                <div class="text-light" className="profile-image-container">
                   <img 
                     src={`${import.meta.env.BASE_URL}images/linus.jpg`}
                     alt="Linus Bwana" 
-                    className="profile-image"
+                    className="profile-image" 
                   />
                 </div>
               </div>
@@ -37,8 +37,8 @@ function Home() {
                 <h1 className="display-4 fw-bold gradient-text mb-3">
                   Hi, I'm Linus Bwana
                 </h1>
-                <h5 className="text-muted mb-3">Full-Stack Software Engineer</h5>
-                <p className="lead text-muted mb-4">
+                <h5 className="text-light mb-3">Full-Stack Software Engineer</h5>
+                <p className="lead text-light mb-4" >
                   Graduate with a Bachelor's degree in Electrical and Electronic Engineering, 
                   further certified in backend development from the ALX Africa bootcamp. I have 
                   been actively building and documenting a portfolio of projects on my GitHub, 
@@ -134,7 +134,7 @@ function Home() {
                       <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
                     </svg>
                   </div>
-                  <h5 className="fw-bold">Backend Development</h5>
+                  <h5 className="fw-bold text-primary">Backend Development</h5>
                   <p className="text-muted mb-0">
                     Building robust APIs and server-side applications with Django and Python
                   </p>
@@ -149,7 +149,7 @@ function Home() {
                       <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z"/>
                     </svg>
                   </div>
-                  <h5 className="fw-bold">Frontend Development</h5>
+                  <h5 className="fw-bold text-primary">Frontend Development</h5>
                   <p className="text-muted mb-0">
                     Creating responsive and modern web interfaces with React.js and Bootstrap
                   </p>
@@ -163,7 +163,7 @@ function Home() {
                       <path fillRule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z"/>
                     </svg>
                   </div>
-                  <h5 className="fw-bold">Full-Stack Solutions</h5>
+                  <h5 className="fw-bold text-primary">Full-Stack Solutions</h5>
                   <p className="text-muted mb-0">
                     Delivering end-to-end web applications with scalable architecture
                   </p>
