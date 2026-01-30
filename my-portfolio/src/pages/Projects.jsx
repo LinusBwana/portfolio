@@ -10,6 +10,12 @@ function Projects() {
 
   const projects = [
     {
+      title: 'Fullstack Task Manager',
+      description: 'A task manager built to track my todo list',
+      technologies: ['Python', 'Django', 'DRF', 'React.js', 'PostgreSQL', 'Bootstrap'],
+      link: 'https://fullstack-task-manager-app.vercel.app/'
+    },
+    {
       title: 'Blog Website',
       description: 'A blog built using Django templates with authentication',
       technologies: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Bootstrap'],
@@ -19,13 +25,13 @@ function Projects() {
       title: 'Job Search Platform',
       description: 'A backend job search platform that has role-based access, JWT, rate limiting etc',
       technologies: ['Python', 'Django', 'DRF', 'PostgreSQL', 'Bootstrap'],
-      link: 'https://job-board-platform.up.railway.app/api/docs/'
+      link: 'https://job-board-platform-production-7536.up.railway.app/api/docs/'
     },
     {
-      title: 'Fullstack Task Manager',
-      description: 'A task manager built to track my todo list',
+      title: 'FullStack E-commerce',
+      description: 'A fullstack e-commerce app. *Still in progress*',
       technologies: ['Python', 'Django', 'DRF', 'React.js', 'PostgreSQL', 'Bootstrap'],
-      link: 'https://fullstack-task-manager-app.vercel.app/'
+      link: 'https://beibora-production-465c.up.railway.app/api/docs/'
     }
   ];
 
