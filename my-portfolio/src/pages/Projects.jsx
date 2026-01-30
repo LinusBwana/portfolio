@@ -29,7 +29,7 @@ function Projects() {
     },
     {
       title: 'FullStack E-commerce',
-      description: 'A fullstack e-commerce app. *Still in progress*',
+      description: 'A fullstack e-commerce app. <strong>Still in progress</strong>',
       technologies: ['Python', 'Django', 'DRF', 'React.js', 'PostgreSQL', 'Bootstrap'],
       link: 'https://beibora-production-465c.up.railway.app/api/docs/'
     }
@@ -54,7 +54,7 @@ function Projects() {
                 <div key={index} className="col-md-6 col-lg-4">
                   <div className="project-card h-100 p-4">
                     <h5 className="fw-bold mb-3 text-primary">{project.title}</h5>
-                    <p className="text-muted mb-3">{project.description}</p>
+                    <p className="text-muted mb-3" dangerouslySetInnerHTML={{ __html: project.description }} />
                     <div className="mb-3">
                       {project.technologies.map((tech, idx) => (
                         <span key={idx} className="badge tech-badge me-2 mb-2">
