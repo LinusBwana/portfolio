@@ -31,7 +31,7 @@ function Projects() {
       title: 'FullStack E-commerce',
       description: 'A fullstack e-commerce app. <strong>Still in progress</strong>',
       technologies: ['Python', 'Django', 'DRF', 'React.js', 'PostgreSQL', 'Bootstrap'],
-      link: 'https://beibora-production-465c.up.railway.app/api/docs/'
+      link: 'https://bei-bora.vercel.app/'
     }
   ];
 
